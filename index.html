@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Ajuda+ v1.0</title>
+        <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+          <header class="fade-in">
+              <h1>Ajuda+ v1.0</h1>
+                  <p>Plataforma de Assistência Inteligente para Áreas Rurais</p>
+                    </header>
+
+                      <main>
+                          <section class="modules fade-in">
+                                <div class="module-card" onclick="abrirModulo('agricultura')">Assistência na Agricultura</div>
+                                      <div class="module-card" onclick="abrirModulo('reforco')">Reforço Escolar</div>
+                                            <div class="module-card" onclick="abrirModulo('lembretes')">Lembretes para Idosos</div>
+                                                  <div class="module-card" onclick="abrirModulo('emocional')">Apoio Emocional</div>
+                                                        <div class="module-card" onclick="abrirModulo('acessibilidade')">Acessibilidade</div>
+                                                            </section>
+
+                                                                <section id="moduloAtivo" class="modulo-ativo fade-in">
+                                                                      <h2>Selecione um módulo para visualizar o conteúdo</h2>
+                                                                          </section>
+
+                                                                              <section class="contato fade-in">
+                                                                                    <h2>Fale com a gente</h2>
+                                                                                          <form id="formContato">
+                                                                                                  <input type="text" name="nome" placeholder="Seu nome" required />
+                                                                                                          <input type="email" name="email" placeholder="Seu e-mail" required />
+                                                                                                                  <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                                                                                                                          <button type="submit">Enviar</button>
+                                                                                                                                </form>
+                                                                                                                                      <p id="respostaForm"></p>
+                                                                                                                                          </section>
+                                                                                                                                            </main>
+
+                                                                                                                                              <footer class="fade-in">
+                                                                                                                                                  <p>&copy; 2025 Ajuda+ | Desenvolvido por Paulo Cauan</p>
+                                                                                                                                                    </footer>
+
+                                                                                                                                                      <!-- SDK do EmailJS -->
+                                                                                                                                                        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                                                                                                                                                          <script>
+                                                                                                                                                              // Substitua abaixo com sua PUBLIC KEY do EmailJS
+                                                                                                                                                                  emailjs.init("SUA_PUBLIC_KEY"); // <-- Coloque aqui sua PUBLIC KEY gerada no emailjs.com
+                                                                                                                                                                    </script>
+                                                                                                                                                                      <script src="script.js"></script>
+                                                                                                                                                                      </body>
+                                                                                                                                                                      </html>
